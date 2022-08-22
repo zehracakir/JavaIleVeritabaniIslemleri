@@ -6,7 +6,7 @@
 - JDBC API her veri tabanı yönetim sistemi için yazılmış olan sürücü kütüphanelerini kullanarak veri tabanı işlemlerini yapabilmeyi sağlar. Veri tabanıyla iletişimde kullanılabilecek birçok başka soyutlama olmasına karşın JDBC bunların hepsinin temelinde bulunur. Bu nedenle JDBC'nin standartını öğrenmek önemlidir.
 - Java ile veri tabanı ile etkileşimde olan kodları yazdığınızda sürücü kütüphane örneğin MySQL’den Oracle veri tabanı sistemine geçse bile hiçbir değişiklik gerektirmeden kullanımını sağlar. Böylece, Java ile veri tabanıyla işlemler yapabilmek için yazdığınız kodları değiştirmeden dilediğiniz veri tabanı sistemiyle çalışabilirsiniz. Böyle yüksek bir soyutluluk sağlaması Java kodlarının yeniden kullanılabilirliğini arttırmaktadır. JDBC API ile veri tabanı bağlantısı oluşturup, tablolar üzerinde sorgu çalıştırabilirsiniz. Sorgulama, veri güncelleme, silme veya yeni kayıt ekleme işlemlerini yapabilirsiniz.
 
-![Ekran görüntüsü 2022-08-15 172920.png](VERI%CC%87TABANI%20I%CC%87S%CC%A7LEMLERI%CC%87%204202a84e2ad54e9a8c972cf5d52caf18/Ekran_grnts_2022-08-15_172920.png)
+![Ekran görüntüsü 2022-08-15 172920.png](https://github.com/zehracakir/JavaIleVeritabaniIslemleri/blob/main/images/Ekran_grnts_2022-08-15_172920.png)
 
 ## ****5 Adımda JDBC’yi Kullanmak****
 
@@ -65,46 +65,46 @@ dbConnection.close();
 docker run --name docker_postgres -e POSTGRES_PASSWORD=1234 -d -p 15432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data postgres
 ```
 
-![Ekran görüntüsü 2022-08-17 140505.png](VERI%CC%87TABANI%20I%CC%87S%CC%A7LEMLERI%CC%87%204202a84e2ad54e9a8c972cf5d52caf18/Ekran_grnts_2022-08-17_140505.png)
+![Ekran görüntüsü 2022-08-17 140505.png](https://github.com/zehracakir/JavaIleVeritabaniIslemleri/blob/main/images/Ekran_grnts_2022-08-17_140505.png)
 
 1. Daha sonra PostgreSQL de yeni bir server oluşturuyoruz.
 
-![Screenshot_1.png](VERI%CC%87TABANI%20I%CC%87S%CC%A7LEMLERI%CC%87%204202a84e2ad54e9a8c972cf5d52caf18/Screenshot_1.png)
+![Screenshot_1.png](https://github.com/zehracakir/JavaIleVeritabaniIslemleri/tree/main/images/Screenshot_1.png)
 
-![Ekran görüntüsü 2022-08-17 141126.png](VERI%CC%87TABANI%20I%CC%87S%CC%A7LEMLERI%CC%87%204202a84e2ad54e9a8c972cf5d52caf18/Ekran_grnts_2022-08-17_141126.png)
+![Ekran görüntüsü 2022-08-17 141126.png](https://github.com/zehracakir/JavaIleVeritabaniIslemleri/tree/main/images/Ekran_grnts_2022-08-17_141126.png)
 
-![Ekran görüntüsü 2022-08-17 141142.png](VERI%CC%87TABANI%20I%CC%87S%CC%A7LEMLERI%CC%87%204202a84e2ad54e9a8c972cf5d52caf18/Ekran_grnts_2022-08-17_141142.png)
+![Ekran görüntüsü 2022-08-17 141142.png](https://github.com/zehracakir/JavaIleVeritabaniIslemleri/tree/main/images/Ekran_grnts_2022-08-17_141142.png)
 
 1. Yeni bir database oluşturuyoruz. Ben üniversite sisteminden ilerleyeceğim için “university” isminde bir database oluşturdum.
 
-![Ekran görüntüsü 2022-08-17 141530.png](VERI%CC%87TABANI%20I%CC%87S%CC%A7LEMLERI%CC%87%204202a84e2ad54e9a8c972cf5d52caf18/Ekran_grnts_2022-08-17_141530.png)
+![Ekran görüntüsü 2022-08-17 141530.png](https://github.com/zehracakir/JavaIleVeritabaniIslemleri/tree/main/images/Ekran_grnts_2022-08-17_141530.png)
 
 1. “student” isminde tablo ekliyorum.
 
-![Ekran görüntüsü 2022-08-17 142044.png](VERI%CC%87TABANI%20I%CC%87S%CC%A7LEMLERI%CC%87%204202a84e2ad54e9a8c972cf5d52caf18/Ekran_grnts_2022-08-17_142044.png)
+![Ekran görüntüsü 2022-08-17 142044.png](https://github.com/zehracakir/JavaIleVeritabaniIslemleri/tree/main/images/Ekran_grnts_2022-08-17_142044.png)
 
 1. —>Projede VSCode kullanacağım ve bir maven projesi olacak. Şimdi kısaca VSCode’a maven kurulumundan bahsedelim.
 - [https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi) sayfasından bin.zip uzantılı maven dosyasını indirdim.
 - Ortam değişiklenlerine maven’ı tanıttım.
 
-![Ekran görüntüsü 2022-08-17 155925.png](VERI%CC%87TABANI%20I%CC%87S%CC%A7LEMLERI%CC%87%204202a84e2ad54e9a8c972cf5d52caf18/Ekran_grnts_2022-08-17_155925.png)
+![Ekran görüntüsü 2022-08-17 155925.png](https://github.com/zehracakir/JavaIleVeritabaniIslemleri/tree/main/images/Ekran_grnts_2022-08-17_155925.png)
 
-![Ekran görüntüsü 2022-08-17 160028.png](VERI%CC%87TABANI%20I%CC%87S%CC%A7LEMLERI%CC%87%204202a84e2ad54e9a8c972cf5d52caf18/Ekran_grnts_2022-08-17_160028.png)
+![Ekran görüntüsü 2022-08-17 160028.png](https://github.com/zehracakir/JavaIleVeritabaniIslemleri/tree/main/images/Ekran_grnts_2022-08-17_160028.png)
 
 - Cmd’ den mavenın versiyonunu sorgulayalım, sorun var mı yok mu bakalım.
 
-![Screenshot_5.png](VERI%CC%87TABANI%20I%CC%87S%CC%A7LEMLERI%CC%87%204202a84e2ad54e9a8c972cf5d52caf18/Screenshot_5.png)
+![Screenshot_5.png](https://github.com/zehracakir/JavaIleVeritabaniIslemleri/tree/main/images/Screenshot_5.png)
 
 - Maven’ı bilgisayarımıza tanıtmamızda bir sorun oluşmadığına göre artık VSCode’dan maven projesi açabiliriz.
 - Ctrl+P ile açtığımz arama kısmında maven’ı aratıyoruz. “Maven:Create Maven Project” i seçiyoruz.
 
-![Screenshot_2.png](VERI%CC%87TABANI%20I%CC%87S%CC%A7LEMLERI%CC%87%204202a84e2ad54e9a8c972cf5d52caf18/Screenshot_2.png)
+![Screenshot_2.png](https://github.com/zehracakir/JavaIleVeritabaniIslemleri/tree/main/images/Screenshot_2.png)
 
 - Daha sonra aşağıdaki işlemleri yaparak bir maven projesi oluşturuyoruz. Paket,proje,dosya adı vs kısmını kendi projemize göre dolduracağımız için o kısımları ekran görüntüsü almadım.
 
-![Screenshot_3.png](VERI%CC%87TABANI%20I%CC%87S%CC%A7LEMLERI%CC%87%204202a84e2ad54e9a8c972cf5d52caf18/Screenshot_3.png)
+![Screenshot_3.png](https://github.com/zehracakir/JavaIleVeritabaniIslemleri/tree/main/images/Screenshot_3.png)
 
-![Screenshot_4.png](VERI%CC%87TABANI%20I%CC%87S%CC%A7LEMLERI%CC%87%204202a84e2ad54e9a8c972cf5d52caf18/Screenshot_4.png)
+![Screenshot_4.png](https://github.com/zehracakir/JavaIleVeritabaniIslemleri/tree/main/images/Screenshot_4.png)
 
 - Sıradaki adımımız src içerisine .properties uzantılı bir dosya oluşturmak, ben [db.properties](http://db.properties) olarak oluşturdum. İçerisini şu şekilde doldurdum.
 
@@ -469,11 +469,11 @@ public class StudentController {
 - Yazdığımız uygulamalar bazen bir işlem çağrısıyla bir ya da birden fazla tabloda işlem yapabilir, bir ya da birden fazla sorguyu ardışık olarak çalıştırmayı gerektirebilmektedir. Bu durumlarda ardışık işlemler gerçekleşirken sürecin bir noktasında bir sorgu hata verebilir. Bu durumlarda süreçteki diğer işlemleri de geri almak isteyebiliriz. Bu durumlarda tablolara gitmek ve yaptığımız işlemlerin tersini yapmak bir hayli zor ve karmaşık olacaktır.
 - Bunu bir diagram ile açıklamak istersek:
 
-![Ekran görüntüsü 2022-08-22 230211.png](VERI%CC%87TABANI%20I%CC%87S%CC%A7LEMLERI%CC%87%204202a84e2ad54e9a8c972cf5d52caf18/Ekran_grnts_2022-08-22_230211.png)
+![Ekran görüntüsü 2022-08-22 230211.png](https://github.com/zehracakir/JavaIleVeritabaniIslemleri/tree/main/images/Ekran_grnts_2022-08-22_230211.png)
 
 - şeklinde bir işlemimiz olsun. Yani kullanıcı bir butona basacak ve bu işlemler ardışık olarak gerçekleşecek.
 
-![Ekran görüntüsü 2022-08-22 231823.png](VERI%CC%87TABANI%20I%CC%87S%CC%A7LEMLERI%CC%87%204202a84e2ad54e9a8c972cf5d52caf18/Ekran_grnts_2022-08-22_231823.png)
+![Ekran görüntüsü 2022-08-22 231823.png](https://github.com/zehracakir/JavaIleVeritabaniIslemleri/tree/main/images/Ekran_grnts_2022-08-22_231823.png)
 
 - Diagramda görüldüğü gibi **Sorgu 3**'te bir nedenden dolayı bir hata gerçekleşti. Bu durumda verilerin bütünlüğünü ve doğruluğunu sağlamamız için işlemi geri almamız gerekir. Bunu yapmak için de JDBC bize bazı fonksiyonlar sağlamaktadır.
 - Veri tabanlarında eğer, bir veri tabanı Transaction’ı başarılı ise “commit” edilir, değilse “rollback” edilir. “commit” edildiğinde değişiklikle kalıcı olarak veri tabanına gönderilir. “rollback” yapılırsa ise o ana kadar yapılmış olan tüm değişiklikler geri alınır.
